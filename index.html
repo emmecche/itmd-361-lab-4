@@ -5,34 +5,38 @@
   <title>Lab 4 HTML Form</title>
 </head>
 <body>
-  <form method="POST" action="lab4formscript.php">
-    <div>
-      <label>First Name: <input type="text" name="first_name_field" placeholder="First name"></label>
-    </div>
-    <div>
-      <label>Last Name: <input type="text" name="last_name_field" placeholder="Last name"></label>
-    </div>
-    <div>
-      <label>Phone Number: <input type="text" name="phone_field" placeholder="Phone #"></label>
-    </div>
-    <div>
-      <label>Email Address: <input type="text" name="email_field" placeholder="Email address"></label>
-    </div>
-    <div>
-      <p>Gender: </p><input type="radio" name="gender_field" id="male"><label for="male">Male </label>
-                     <input type="radio" name="gender_field" id="female"><label for="female">Female </label>
-    </div>
-    <div>
-      <label>Age: </label><select name="age_field">
-        <option value="18">under 18</option>
-        <option value="24">18 - 24</option>
-        <option value="34">25 - 34</option>
-        <option value="44">35 - 44</option>
-        <option value="54">45 - 54</option>
-        <option value="64">55 - 64</option>
-        <option value="65">65 and over</option>
-      </select>
-    </div>
-  </form>
+  <h1>Volunteer Form</h1>
+  <fieldset>
+  <legend>My Info</legend>
+    <form method="POST" action="lab4formscript.php">
+      <div>
+        <label>First Name: <input type="text" name="first_name_field" placeholder="First name"></label>
+      </div>
+      <div>
+        <label>Last Name: <input type="text" name="last_name_field" placeholder="Last name"></label>
+      </div>
+      <div>
+        <label>Phone Number: <input type="text" name="phone_field" placeholder="Phone #"></label>
+      </div>
+      <div>
+        <label>Email Address: <input type="text" name="email_field" placeholder="Email address"></label>
+      </div>
+      <div>
+        <label>Gender:</label><input type="radio" name="gender_field" id="male"><label for="male">Male </label>
+                              <input type="radio" name="gender_field" id="female"><label for="female">Female </label>
+      </div>
+      <div>
+        <label>Age: </label><select name="age_field">
+          <option value="18">under 18</option>
+          <option value="24">18 - 24</option>
+          <option value="34">25 - 34</option>
+          <option value="44">35 - 44</option>
+          <option value="54">45 - 54</option>
+          <option value="64">55 - 64</option>
+          <option value="65">65 and over</option>
+        </select>
+      </div>
+    </form>
+  </fieldset>
 </body>
 </html>
