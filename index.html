@@ -5,11 +5,11 @@
   <title>Lab 4 HTML Form</title>
 </head>
 <body>
-  <h1>Volunteer Form</h1>
-  <fieldset>
-  <legend>My Info</legend>
-    <form method="POST" action="lab4formscript.php">
-      <div>
+  <h2>Volunteer Form</h2>
+  <form method="POST" action="lab4formscript.php">
+    <fieldset>
+    <legend>My Info</legend>
+    <div>
         <label>First Name: <input type="text" name="first_name_field" placeholder="First name"></label>
       </div>
       <div>
@@ -22,21 +22,45 @@
         <label>Email Address: <input type="text" name="email_field" placeholder="Email address"></label>
       </div>
       <div>
-        <label>Gender:</label><input type="radio" name="gender_field" id="male"><label for="male">Male </label>
-                              <input type="radio" name="gender_field" id="female"><label for="female">Female </label>
+        <label>Gender:</label>
+        <input type="radio" name="gender_field" id="male" value="male"><label for="male">Male </label>
+        <input type="radio" name="gender_field" id="female" value="female"><label for="female">Female </label>
       </div>
       <div>
-        <label>Age: </label><select name="age_field">
-          <option value="18">under 18</option>
-          <option value="24">18 - 24</option>
-          <option value="34">25 - 34</option>
-          <option value="44">35 - 44</option>
-          <option value="54">45 - 54</option>
-          <option value="64">55 - 64</option>
-          <option value="65">65 and over</option>
+        <label>Age: </label>
+        <select name="age_field">
+          <option value="under_18">under 18</option>
+          <option value="18-24">18 - 24</option>
+          <option value="25-34">25 - 34</option>
+          <option value="35-44">35 - 44</option>
+          <option value="45-54">45 - 54</option>
+          <option value="55-64">55 - 64</option>
+          <option value="65_and_over">65 and over</option>
         </select>
       </div>
+    </fieldset>
+    <fieldset>
+    <legend>My Availability</legend>
+    <div>
+      <label>Days Available:</label>
+      <input type="checkbox" id="sunday" name="available_field[]" value="Sunday"><label for="sunday">Monday</label>
+      <input type="checkbox" id="monday" name="available_field[]" value="Monday"><label for="monday">Monday</label>
+      <input type="checkbox" id="tuesday" name="available_field[]" value="Tuesday"><label for="tuesday">Monday</label>
+      <input type="checkbox" id="wednesday" name="available_field[]" value="Wednesday"><label for="wednesday">Monday</label>
+      <input type="checkbox" id="thursday" name="available_field[]" value="Thursday"><label for="thursday">Monday</label>
+      <input type="checkbox" id="friday" name="available_field[]" value="Friday"><label for="friday">Monday</label>
+      <input type="checkbox" id="saturday" name="available_field[]" value="Saturday"><label for="saturday">Monday</label>
+    </div>
+    <div>
+      <label for="comments">Any Comments?</label><textarea name="comments_field" id="comments" cols="30" rows="10"></textarea>
+    </div>
+    </fieldset>
+      <div>
+        <input type="hidden" name="hidden_field" value="pfisler">
+      </div>
+      <div>
+        <input type="submit" value="Send Me">
+      </div>
     </form>
-  </fieldset>
 </body>
 </html>
